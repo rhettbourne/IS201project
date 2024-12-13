@@ -1,0 +1,5705 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000215;
+    margin: 0;
+    padding: 20px;
+
+    background-image: url('images/background-image.jpg'); /* Path to the image */
+  background-size: cover; /* Make the image cover the entire body */
+  background-attachment: fixed;
+  background-position: center center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  height: 100vh; /* Make sure the body takes up the full height of the viewport */
+  margin: 0; /* Remove default margin */
+
+
+  overscroll-behavior: none;
+  
+}
+
+
+.title-image {
+
+    position: absolute;
+    width: 57%;
+    left: 20px; 
+    top: 20px;
+    z-index: 100;
+
+}
+
+.title-image img{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.intro {
+
+    position: absolute;
+    left: 50px; 
+    top: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(79.5% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+
+}
+
+
+
+
+
+.blue-tint {
+    position: fixed; /* Position the tint over the background */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(210, 231, 255, 0.846); /* Blue tint with opacity */
+    z-index: -1; /* Ensure the tint is below the content */
+  }
+
+
+/* Ribbon Styles */
+.ribbon {
+    position: fixed;
+    bottom: -5px;
+    right: 133px;
+    width: 15%;
+    background-color: rgba(210, 231, 255, 0.367);
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 100;
+    transition: transform 0.4s ease;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ribbon:hover {
+    transform: scale(1.1) translateY(-5px);
+  }
+  
+  /* Anchor at the top of the page */
+  #top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 0;
+  }
+
+
+  .s-button {
+    position: fixed;
+    top: 10px;
+    right: 404px;
+    width: 3%;
+    background-color: #ffd1d1b0;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 100;
+    transition: transform 0.4s ease;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .s-button:hover {
+    transform: scale(1.1) translateY(5px);
+  }
+  
+  /* Anchor at the top of the page */
+  #top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 0;
+  }
+
+
+  .a-button {
+    position: fixed;
+    top: 10px;
+    right: 314px;
+    width: 3%;
+    background-color: #ffd7c1b3;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 100;
+    transition: transform 0.4s ease;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .a-button:hover {
+    transform: scale(1.1) translateY(5px);
+  }
+  
+  /* Anchor at the top of the page */
+  #top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 0;
+  }
+
+  .b-button {
+    position: fixed;
+    top: 10px;
+    right: 224px;
+    width: 3%;
+    background-color: #fffac1ac;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 100;
+    transition: transform 0.4s ease;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .b-button:hover {
+    transform: scale(1.1) translateY(5px);
+  }
+  
+  /* Anchor at the top of the page */
+  #top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 0;
+  }
+
+  .c-button {
+    position: fixed;
+    top: 10px;
+    right: 134px;
+    width: 3%;
+    background-color: #d0ffd1a9;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 100;
+    transition: transform 0.4s ease;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .c-button:hover {
+    transform: scale(1.1) translateY(5px);
+  }
+  
+  /* Anchor at the top of the page */
+  #top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 0;
+  }
+
+  .d-button {
+    position: fixed;
+    top: 10px;
+    right: 44px;
+    width: 3%;
+    background-color: #fedaffad;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 100;
+    transition: transform 0.4s ease;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .d-button:hover {
+    transform: scale(1.1) translateY(5px);
+  }
+  
+  /* Anchor at the top of the page */
+  #top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 0;
+  }
+
+
+
+
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    z-index: 1;
+}
+
+.line-item {
+    display: flex;
+    align-items: center;
+    background-color: #ffd1d1;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.line-item1 {
+    display: flex;
+    align-items: center;
+    background-color: #ffd1d1b0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+    
+}
+
+.line-item1:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.line-item2 {
+    display: flex;
+    align-items: center;
+    background-color: #ffd1d1b0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item2:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.line-item3 {
+    display: flex;
+    align-items: center;
+    background-color: #ffd1d1b0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item3:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.line-item4 {
+    display: flex;
+    align-items: center;
+    background-color: #ffd7c1b3;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item4:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.line-item5 {
+    display: flex;
+    align-items: center;
+    background-color: #ffd7c1b3;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item5:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.line-item6 {
+    display: flex;
+    align-items: center;
+    background-color: #ffd7c1b3;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item6:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.line-item7 {
+    display: flex;
+    align-items: center;
+    background-color: #ffd7c1b3;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item7:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.line-item8 {
+    display: flex;
+    align-items: center;
+    background-color: #ffd7c1b3;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item8:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu1 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu1 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.menu2 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu2 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.menu3 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu3 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.menu4 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu4 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.menu5 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu5 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.menu6 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu6 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.menu7 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu7 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.menu8 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu8 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item1:hover ~ .menu1 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item2:hover ~ .menu2 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item3:hover ~ .menu3 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item4:hover ~ .menu4 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item5:hover ~ .menu5 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item6:hover ~ .menu6 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item7:hover ~ .menu7 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item8:hover ~ .menu8 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+img {
+    width: 30%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.content {
+    margin-left: 20px;
+    flex-grow: 1;
+}
+
+h2 {
+    font-size: 1.4rem;
+    color: #333;
+}
+
+
+
+
+.line-item9 {
+    display: flex;
+    align-items: center;
+    background-color: #ffd7c1b3;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item9:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu9 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu9 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item9:hover ~ .menu9 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item10 {
+    display: flex;
+    align-items: center;
+    background-color: #ffd7c1b3;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item10:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu10 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu10 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item10:hover ~ .menu10 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+
+.line-item11 {
+    display: flex;
+    align-items: center;
+    background-color: #ffd7c1b3;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item11:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu11 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu11 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item11:hover ~ .menu11 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item12 {
+    display: flex;
+    align-items: center;
+    background-color: #ffd7c1b3;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item12:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu12 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu12 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item12:hover ~ .menu12 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item13 {
+    display: flex;
+    align-items: center;
+    background-color: #ffd7c1b3;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item13:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu13 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu13 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item13:hover ~ .menu13 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+
+.line-item14 {
+    display: flex;
+    align-items: center;
+    background-color: #ffd7c1b3;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item14:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu14 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu14 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item14:hover ~ .menu14 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item15 {
+    display: flex;
+    align-items: center;
+    background-color: #fffac1ac;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item15:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu15 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu15 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item15:hover ~ .menu15 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item16 {
+    display: flex;
+    align-items: center;
+    background-color: #fffac1ac;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item16:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu16 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu16 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item16:hover ~ .menu16 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item17 {
+    display: flex;
+    align-items: center;
+    background-color: #fffac1ac;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item17:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu17 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu17 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item17:hover ~ .menu17 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item18 {
+    display: flex;
+    align-items: center;
+    background-color: #fffac1ac;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item18:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu18 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu18 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item18:hover ~ .menu18 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+
+.line-item19 {
+    display: flex;
+    align-items: center;
+    background-color: #fffac1ac;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item19:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu19 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu19 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item19:hover ~ .menu19 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+
+.line-item20 {
+    display: flex;
+    align-items: center;
+    background-color: #fffac1ac;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item20:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu20 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu20 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item20:hover ~ .menu20 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+
+.line-item21 {
+    display: flex;
+    align-items: center;
+    background-color: #fffac1ac;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item21:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu21 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu21 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item21:hover ~ .menu21 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item22 {
+    display: flex;
+    align-items: center;
+    background-color: #fffac1ac;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item22:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu22 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu22 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item22:hover ~ .menu22 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item23 {
+    display: flex;
+    align-items: center;
+    background-color: #fffac1ac;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item23:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu23 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu23 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item23:hover ~ .menu23 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item24 {
+    display: flex;
+    align-items: center;
+    background-color: #fffac1ac;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item24:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu24 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu24 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item24:hover ~ .menu24 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item25 {
+    display: flex;
+    align-items: center;
+    background-color: #fffac1ac;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item25:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu25 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu25 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item25:hover ~ .menu25 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item26 {
+    display: flex;
+    align-items: center;
+    background-color: #fffac1ac;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item26:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu26 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu26 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item26:hover ~ .menu26 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item27 {
+    display: flex;
+    align-items: center;
+    background-color: #fffac1ac;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item27:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu27 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu27 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item27:hover ~ .menu27 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item28 {
+    display: flex;
+    align-items: center;
+    background-color: #fffac1ac;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item28:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu28 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu28 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item28:hover ~ .menu28 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item29 {
+    display: flex;
+    align-items: center;
+    background-color: #fffac1ac;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item29:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu29 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu29 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item29:hover ~ .menu29 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+
+.line-item30 {
+    display: flex;
+    align-items: center;
+    background-color: #fffac1ac;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item30:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu30 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu30 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item30:hover ~ .menu30 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item31 {
+    display: flex;
+    align-items: center;
+    background-color: #fffac1ac;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item31:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu31 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu31 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item31:hover ~ .menu31 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item32 {
+    display: flex;
+    align-items: center;
+    background-color: #fffac1ac;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item32:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu32 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu32 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item32:hover ~ .menu32 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item33 {
+    display: flex;
+    align-items: center;
+    background-color: #fffac1ac;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item33:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu33 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu33 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item33:hover ~ .menu33 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item34 {
+    display: flex;
+    align-items: center;
+    background-color: #fffac1ac;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item34:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu34 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu34 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item34:hover ~ .menu34 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item35 {
+    display: flex;
+    align-items: center;
+    background-color: #fffac1ac;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item35:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu35 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu35 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item35:hover ~ .menu35 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item36 {
+    display: flex;
+    align-items: center;
+    background-color: #d0ffd1a9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item36:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu36 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu36 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item36:hover ~ .menu36 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item37 {
+    display: flex;
+    align-items: center;
+    background-color: #d0ffd1a9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item37:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu37 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu37 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item37:hover ~ .menu37 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item38 {
+    display: flex;
+    align-items: center;
+    background-color: #d0ffd1a9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item38:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu38 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu38 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item38:hover ~ .menu38 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item39 {
+    display: flex;
+    align-items: center;
+    background-color: #d0ffd1a9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item39:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu39 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu39 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item39:hover ~ .menu39 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item40 {
+    display: flex;
+    align-items: center;
+    background-color: #d0ffd1a9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item40:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu40 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu40 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item40:hover ~ .menu40 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item41 {
+    display: flex;
+    align-items: center;
+    background-color: #d0ffd1a9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item41:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu41 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu41 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item41:hover ~ .menu41 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item42 {
+    display: flex;
+    align-items: center;
+    background-color: #d0ffd1a9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item42:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu42 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu42 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item42:hover ~ .menu42 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+
+.line-item43 {
+    display: flex;
+    align-items: center;
+    background-color: #d0ffd1a9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item43:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu43 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu43 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item43:hover ~ .menu43 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item44 {
+    display: flex;
+    align-items: center;
+    background-color: #d0ffd1a9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item44:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu44 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu44 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item44:hover ~ .menu44 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+
+.line-item45 {
+    display: flex;
+    align-items: center;
+    background-color: #d0ffd1a9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item45:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu45 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu45 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item45:hover ~ .menu45 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item46 {
+    display: flex;
+    align-items: center;
+    background-color: #d0ffd1a9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item46:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu46 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu46 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item46:hover ~ .menu46 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+
+.line-item47 {
+    display: flex;
+    align-items: center;
+    background-color: #d0ffd1a9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item47:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu47 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu47 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item47:hover ~ .menu47 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item48 {
+    display: flex;
+    align-items: center;
+    background-color: #d0ffd1a9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item48:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu48 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu48 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item48:hover ~ .menu48 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item49 {
+    display: flex;
+    align-items: center;
+    background-color: #d0ffd1a9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item49:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu49 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu49 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item49:hover ~ .menu49 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item50 {
+    display: flex;
+    align-items: center;
+    background-color: #d0ffd1a9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item50:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu50 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu50 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item50:hover ~ .menu50 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item51 {
+    display: flex;
+    align-items: center;
+    background-color: #d0ffd1a9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item51:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu51 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu51 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item51:hover ~ .menu51 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item520 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item520:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu520 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu520 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item520:hover ~ .menu520 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+
+
+.line-item52 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item52:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu52 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu52 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item52:hover ~ .menu52 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item53 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item53:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu53 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu53 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item53:hover ~ .menu53 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item54 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item54:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu54 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu54 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item54:hover ~ .menu54 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item55 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item55:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu55 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu55 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item55:hover ~ .menu55 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item56 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item56:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu56 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu56 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item56:hover ~ .menu56 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item57 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item57:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu57 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu57 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item57:hover ~ .menu57 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item58 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item58:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu58 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu58 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item58:hover ~ .menu58 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item59 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item59:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu59 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu59 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item59:hover ~ .menu59 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item60 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item60:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu60 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu60 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item60:hover ~ .menu60 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+
+.line-item61 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item61:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu61 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu61 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item61:hover ~ .menu61 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item62 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item62:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu62 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu62 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item62:hover ~ .menu62 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item63 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item63:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu63 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu63 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item63:hover ~ .menu63 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item64 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item64:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu64 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu64 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item64:hover ~ .menu64 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item65 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item65:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu65 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu65 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item65:hover ~ .menu65 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item66 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item66:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu66 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu66 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item66:hover ~ .menu66 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item67 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item67:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu67 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu67 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item67:hover ~ .menu67 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item68 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item68:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu68 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu68 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item68:hover ~ .menu68 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item69 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item69:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu69 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu69 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item69:hover ~ .menu69 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item70 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item70:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu70 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu70 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item70:hover ~ .menu70 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item71 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item71:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu71 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu71 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item71:hover ~ .menu71 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item72 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item72:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu72 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu72 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item72:hover ~ .menu72 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item73 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item73:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu73 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu73 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item73:hover ~ .menu73 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item74 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item74:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu74 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu74 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item74:hover ~ .menu74 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item75 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item75:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu75 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu75 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item75:hover ~ .menu75 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item76 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item76:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu76 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu76 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item76:hover ~ .menu76 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item77 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item77:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu77 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu77 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item77:hover ~ .menu77 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item78 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item78:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu78 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu78 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item78:hover ~ .menu78 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item79 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item79:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu79 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu79 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item79:hover ~ .menu79 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item80 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item80:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu80 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu80 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item80:hover ~ .menu80 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item81 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item81:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu81 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu81 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item81:hover ~ .menu81 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item82 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item82:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu82 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu82 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item82:hover ~ .menu82 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item83 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item83:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu83 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu83 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item83:hover ~ .menu83 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item84 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item84:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu84 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu84 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item84:hover ~ .menu84 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item85 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item85:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu85 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu85 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item85:hover ~ .menu85 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item86 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item86:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu86 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu86 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item86:hover ~ .menu86 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item87 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item87:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu87 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu87 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item87:hover ~ .menu87 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item88 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item88:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu88 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu88 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item88:hover ~ .menu88 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item89 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item89:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu89 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu89 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item89:hover ~ .menu89 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item90 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item90:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu90 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu90 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item90:hover ~ .menu90 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item91 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item91:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu91 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu91 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item91:hover ~ .menu91 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item92 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item92:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu92 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu92 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item92:hover ~ .menu92 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item93 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item93:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu93 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu93 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item93:hover ~ .menu93 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item94 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item94:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu94 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu94 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item94:hover ~ .menu94 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item95 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item95:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu95 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu95 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item95:hover ~ .menu95 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item96 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item96:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu96 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu96 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item96:hover ~ .menu96 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item97 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item97:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu97 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu97 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item97:hover ~ .menu97 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item98 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item98:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu98 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu98 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item98:hover ~ .menu98 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item99 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item99:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu99 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu99 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item99:hover ~ .menu99 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item100 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item100:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu100 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu100 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item100:hover ~ .menu100 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item101 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item101:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu101 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu101 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item101:hover ~ .menu101 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item102 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item102:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu102 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu102 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item102:hover ~ .menu102 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item103 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item103:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu103 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu103 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item103:hover ~ .menu103 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item104 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item104:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu104 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu104 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item104:hover ~ .menu104 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item105 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item105:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu105 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu105 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item105:hover ~ .menu105 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item106 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item106:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu106 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu106 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item106:hover ~ .menu106 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item107 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item107:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu107 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu107 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item107:hover ~ .menu107 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item108 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item108:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu108 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu108 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item108:hover ~ .menu108 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
+
+.line-item109 {
+    display: flex;
+    align-items: center;
+    background-color: #fedaffad;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(58% - 20px); /* Half of the screen width minus margins */
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+.line-item109:hover {
+    transform: translateX(10px) scale(1.05);
+}
+
+.menu109 {
+    transform: translateX(20px); /* Start slightly below */
+  visibility: hidden;          /* Make it invisible */
+  transition: transform 0.5s ease, visibility 0s 0.5s; /* Smooth slide + fade */
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    bottom: 90px;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(27% - 40px); /* Half of the screen width minus margins */
+    margin: 10;
+    transition: transform 0.4s ease;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+.menu109 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+
+.line-item109:hover ~ .menu109 {
+    transform: translateX(0);    /* Slide it into place */
+    visibility: visible;         /* Make it visible and interactable */
+}
